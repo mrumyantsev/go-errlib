@@ -4,6 +4,10 @@
 
 **errlib** is a Go library for convenient error wrapping.
 
+## Prerequisites
+
+- [Go](https://go.dev/dl) >= v1.15
+
 ## Installation
 
 Download/update the library.
@@ -11,10 +15,6 @@ Download/update the library.
 ```
 go get -u "github.com/mrumyantsev/errlib-go"
 ```
-
-## Prerequisites
-
-- [Go](https://go.dev/dl) >= v1.15
 
 ## Usage
 
