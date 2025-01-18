@@ -1,8 +1,6 @@
 # errlib
 
-## Introduction
-
-**errlib** is a Go library for convenient error wrapping.
+errlib is a Go library for convenient error wrapping. Its Wrap function is a shortcut for ```fmt.Errorf("some error message: %w", err)```.
 
 ## Prerequisites
 
@@ -21,9 +19,11 @@ go get -u "github.com/mrumyantsev/errlib-go"
 Call the Wrap function to wrap an error.
 
 ``` Go
-err := cfg.Load("config.json")
+cfg := config.New()
+
+err := cfg.Load("./configs/config.json")
 if err != nil {
-    return errlib.Wrap(err, "could not load a config file")
+    return errlib.Wrap(err, "could not load config")
 }
 ```
 
