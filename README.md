@@ -11,7 +11,7 @@ errlib is a Go library for convenient error wrapping. Its Wrap function is a sho
 Download/update the library.
 
 ```
-go get -u "github.com/mrumyantsev/errlib-go"
+go get "github.com/mrumyantsev/go-errlib"
 ```
 
 ## Usage

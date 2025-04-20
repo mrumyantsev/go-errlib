@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/mrumyantsev/errlib-go"
+	"github.com/mrumyantsev/go-errlib"
 )
 
 func TestWrap(t *testing.T) {
