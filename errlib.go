@@ -6,7 +6,7 @@ import (
 	"reflect"
 )
 
-// Wrap wraps the error with other errors or strings and returns an
+// Wrap wraps an error with other errors or strings and returns an
 // error that is unwrappable by errors.Unwrap() function, and also
 // comparable with errors.Is() and errors.As() functions.
 //

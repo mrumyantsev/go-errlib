@@ -2,7 +2,7 @@
 
 This library is made for convenient error wrapping.
 
-Its `Wrap` function wraps the error with other errors or strings and returns an
+Its `Wrap()` function wraps an error with other errors or strings and returns an
 error that is unwrappable by `errors.Unwrap()` function, and also
 comparable with `errors.Is()` and `errors.As()` functions.
 
@@ -13,19 +13,17 @@ The result error string will be like: `"c: b: a"`.
 - Windows/Linux/macOS.
 - Go v1.15 or higher.
 
-## Installation
+## Installation and Usage
 
-Install or update the library.
+1. Install or update the library.
 
-``` Bash
+``` bash
 go get "github.com/mrumyantsev/go-errlib"
 ```
 
-## Usage
+2. Call the `Wrap()` function to wrap an error.
 
-Call the Wrap function to wrap an error.
-
-``` Go
+``` go
 import "github.com/mrumyantsev/go-errlib"
 
 func foo() error {
@@ -42,8 +40,8 @@ func foo() error {
 
 ## Testing
 
-Run the unit tests.
+1. Run the unit tests to test the library.
 
-``` Bash
+``` bash
 go test
 ```
